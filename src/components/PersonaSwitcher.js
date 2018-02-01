@@ -11,7 +11,7 @@ const PersonaSwitcher = ({ currentPersona, changePersona }) => (
         onChange={changePersona}
         className="block appearance-none bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"
       >
-        <option value="Zac">Zac</option>
+        <option selected value="Zac">Zac</option>
         <option value="Esmeralda">Esmeralda</option>
         <option value="Morgana">Morgana</option>
       </select>

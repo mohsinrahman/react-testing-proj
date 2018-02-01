@@ -5,6 +5,7 @@ import zac from '../images/zac.png';
 import morgana from '../images/morgana.png';
 
 const AvatarSelector = ({ currentPersona }) => {
+  //console.log(currentPersona);
   let img = zac;
   if (currentPersona === 'Zac') {
     img = zac;
@@ -15,6 +16,7 @@ const AvatarSelector = ({ currentPersona }) => {
   if (currentPersona === 'Morgana') {
     img = morgana;
   }
+  //console.log(img);
   return (
     <img
       src={img}

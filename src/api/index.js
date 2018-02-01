@@ -20,8 +20,9 @@ export function createPostObject(title = '', content = '', author){
   return {
     title,
     content,
+
     id: generateID(),
-    author,
+      author,
     date: (new Date()).toLocaleString()
   }
 }
@@ -124,7 +125,7 @@ const responses = [
 export function botReply() {
   const randomInt = generateRandomInt(2000,10000);
   const randomAnswerIndex = generateRandomInt(0, responses.length - 1);
-  return new Promise(resolve => { 
+  return new Promise(resolve => {
     setTimeout(() => {
       resolve({ message: responses[randomAnswerIndex], bot: true })
     }, randomInt);
